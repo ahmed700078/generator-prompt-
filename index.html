@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مولّد البرومبتات الاحترافي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5fb;--card:#fff;--tx:#12141f;--mut:#6a7085;--bd:#e4e6f1;--ac:#6d5efc;--ac2:#18b4d8;--acx:#fff;--code:#0e1120;--codetx:#d6e6ff;--sh:0 1px 2px rgba(20,22,40,.04),0 10px 32px rgba(30,30,90,.07);--g:linear-gradient(135deg,var(--ac),var(--ac2));box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0c13;--card:#141824;--tx:#eef0f8;--mut:#98a0b6;--bd:#252a3c;--ac:#8b7dff;--ac2:#2dd4ef;--code:#080a12;--codetx:#cfe0ff;--sh:0 1px 2px rgba(0,0,0,.4),0 10px 34px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg:#0a0c13;--card:#141824;--tx:#eef0f8;--mut:#98a0b6;--bd:#252a3c;--ac:#8b7dff;--ac2:#2dd4ef;--code:#080a12;--codetx:#cfe0ff;--sh:0 1px 2px rgba(0,0,0,.4),0 10px 34px rgba(0,0,0,.35)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:var(--bd);border-radius:8px}
+body{margin:0;color:var(--tx);font-family:"Cairo","Segoe UI",Tahoma,"Noto Naskh Arabic",Arial,sans-serif;font-size:17px;line-height:1.65;background-color:var(--bg);background-image:radial-gradient(900px 420px at 90% -8%,color-mix(in srgb,var(--ac) 16%,transparent),transparent),radial-gradient(700px 380px at 0% 0%,color-mix(in srgb,var(--ac2) 13%,transparent),transparent);background-attachment:fixed}
+.w{max-width:1360px;margin:0 auto;padding:28px 18px 60px}
+.badge{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.4px;padding:5px 14px;border-radius:999px;background:color-mix(in srgb,var(--ac) 14%,transparent);color:var(--ac);border:1px solid color-mix(in srgb,var(--ac) 30%,transparent);margin-bottom:10px}
+h1{font-size:clamp(28px,4.5vw,44px);font-weight:800;line-height:1.25;margin:0 0 6px;background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);margin:0 0 26px;font-size:16px;max-width:760px}
+.lay{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:22px;align-items:start}
+@media(max-width:980px){.lay{grid-template-columns:1fr}}
+.sec{background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:6px 22px 20px;margin-bottom:18px;box-shadow:var(--sh)}
+.sec>h2{display:flex;align-items:center;gap:12px;font-size:19px;font-weight:700;margin:0;padding:16px 0 4px;color:var(--tx)}
+.ci{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:12px;background:color-mix(in srgb,var(--ac) 13%,transparent);font-size:18px}
+.chev{margin-inline-start:auto;width:10px;height:10px;border-inline-end:2px solid var(--mut);border-bottom:2px solid var(--mut);transform:rotate(45deg);transition:transform .25s;margin-top:-4px}
+.sec.closed .chev{transform:rotate(-135deg);margin-top:4px}.sec.closed{padding-bottom:6px}
+h2.acc{cursor:pointer;user-select:none}
+.live{margin-inline-start:auto;width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+.grp{margin-top:18px}
+.grp h3{font-size:14px;margin:0 0 9px;color:var(--mut);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+button{font:inherit;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s,border-color .2s}
+.chip{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:999px;padding:6px 15px;font-size:15px}
+.chip:hover{border-color:var(--ac);transform:translateY(-1px)}
+.chip.on{background:var(--g);color:var(--acx);border-color:transparent;font-weight:700;box-shadow:0 4px 14px color-mix(in srgb,var(--ac) 40%,transparent)}
+textarea,input[type=text],select{width:100%;padding:12px 15px;border:1px solid var(--bd);border-radius:14px;background:var(--bg);color:var(--tx);font:inherit;font-size:15.5px;outline:0;transition:border-color .2s,box-shadow .2s}
+select{width:auto;padding:9px 14px}
+textarea:focus,input[type=text]:focus,select:focus{border-color:var(--ac);box-shadow:0 0 0 4px color-mix(in srgb,var(--ac) 18%,transparent)}
+textarea{min-height:90px;resize:vertical}
+.qs{margin-bottom:10px;border-radius:999px;padding:9px 16px}
+.tg{display:flex;flex-wrap:wrap;gap:10px;font-size:15px;margin-top:14px}
+.tg label{display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:8px 13px;cursor:pointer}
+.tg input{width:18px;height:18px;accent-color:var(--ac)}
+.out{position:sticky;top:calc(env(safe-area-inset-top,0px) + 14px);border-top:3px solid transparent;border-image:var(--g) 1}
+@media(max-width:980px){.out{position:static}}
+@media(min-width:981px){.out{max-height:calc(100vh - 28px);overflow:auto}}
+.ota{direction:ltr;text-align:left;width:100%;min-height:46vh;background:var(--code);color:var(--codetx);border:1px solid #ffffff12;border-radius:16px;padding:18px;font-size:14.5px;line-height:1.7;font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;resize:vertical;margin-top:12px}
+.btn{background:var(--g);color:var(--acx);border:0;border-radius:12px;padding:11px 22px;font-weight:700;font-size:16px;box-shadow:0 6px 18px color-mix(in srgb,var(--ac) 35%,transparent)}
+.btn:hover{transform:translateY(-1px)}.btn:active{transform:scale(.97)}
+.btn.s{background:var(--card);color:var(--tx);border:1px solid var(--bd);font-weight:600;box-shadow:none}
+.btn.s:hover{border-color:var(--ac)}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;align-items:center}
+.hint{font-size:13.5px;color:var(--mut)}
+.ic{font-size:1.15em;margin-inline-end:6px;vertical-align:-2px}
+.warn{background:#fff6dc;color:#5b4300;border:1px solid #efd180;border-radius:12px;padding:9px 14px;margin-top:10px;font-size:14.5px}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .warn{background:#33290a;color:#f5dfa1;border-color:#6e5a1c}}
+:root[data-theme="dark"] .warn{background:#33290a;color:#f5dfa1;border-color:#6e5a1c}
+#tn{flex:1;min-width:140px}
+.vr{margin-top:14px}.vr h3{margin:0 0 6px;font-size:14px;color:var(--mut)}.vr .ota{min-height:120px;margin-top:0}
+.bar{display:none}
+@media(max-width:980px){body{padding-bottom:88px}.bar{display:flex;gap:10px;align-items:center;position:fixed;left:0;right:0;bottom:0;z-index:20;background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--bd);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}.sec{padding:4px 16px 16px;border-radius:18px}}
+
+.ws{display:grid;grid-template-columns:214px minmax(0,1fr);gap:18px;align-items:start}
+nav{position:sticky;top:14px;background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:8px;box-shadow:var(--sh)}
+.nv{display:flex;align-items:center;gap:10px;width:100%;text-align:start;background:none;border:0;color:var(--mut);padding:10px;border-radius:12px;font-size:15px}
+.nv:hover{background:var(--bg);color:var(--tx)}.nv.on{background:color-mix(in srgb,var(--ac) 13%,transparent);color:var(--ac);font-weight:700}
+.nn{font-size:12px;opacity:.7;width:20px}
+.nb{margin-inline-start:auto;min-width:22px;height:22px;border-radius:999px;background:var(--g);color:#fff;font-size:12px;display:grid;place-items:center;padding:0 6px}
+.pl{background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:22px 24px 26px;box-shadow:var(--sh);min-height:320px}
+.pt{font-size:21px;margin:0 0 18px;font-weight:800}
+.fg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.fd.wide{grid-column:1/-1}
+.fl{display:block;font-size:13px;font-weight:600;color:var(--mut);margin-bottom:6px}
+.fv{min-height:46px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:7px 12px;padding-inline-end:34px;border:1px solid var(--bd);border-radius:12px;background:var(--bg);cursor:pointer;position:relative}
+.fv::after{content:"";position:absolute;inset-inline-end:14px;top:50%;width:7px;height:7px;border-inline-end:2px solid var(--mut);border-bottom:2px solid var(--mut);transform:translateY(-70%) rotate(45deg)}
+.fv:hover,.fv:focus{border-color:var(--ac);outline:0}.fv.has{border-color:color-mix(in srgb,var(--ac) 45%,var(--bd))}
+.ph{color:var(--mut);font-size:15px}
+.tag{display:inline-flex;align-items:center;gap:6px;background:color-mix(in srgb,var(--ac) 13%,transparent);border-radius:8px;padding:3px 6px 3px 10px;font-size:14.5px}
+.tag i{font-style:normal;opacity:.55;cursor:pointer;padding:0 3px}.tag i:hover{opacity:1;color:#e11d48}
+.ov{position:fixed;inset:0;z-index:50;background:rgba(8,10,20,.55);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center}
+.pn{width:min(520px,94vw);max-height:82vh;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--bd);border-radius:20px;box-shadow:0 30px 80px rgba(0,0,0,.35);overflow:hidden}
+.ph2{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;gap:10px;border-bottom:1px solid var(--bd)}
+.ph2 b{font-size:16px}.pb{padding:10px 14px;overflow:auto}.pn .qs{margin:10px 14px 0;width:auto}
+.it{display:flex;align-items:center;gap:10px;width:100%;text-align:start;background:none;border:0;color:var(--tx);padding:9px 12px;border-radius:10px;font-size:15.5px}
+.it:hover{background:var(--bg)}.it.on{background:color-mix(in srgb,var(--ac) 13%,transparent);font-weight:700}
+.it .ck{margin-inline-start:auto;color:var(--ac);opacity:0}.it.on .ck{opacity:1}
+.pf{padding:12px 16px;border-top:1px solid var(--bd);display:flex;gap:10px;justify-content:space-between}
+@media(max-width:980px){.ws{grid-template-columns:1fr}nav{position:sticky;top:0;z-index:15;display:flex;overflow-x:auto;gap:4px;border-radius:14px}.nv{width:auto;white-space:nowrap}.ov{align-items:flex-end}.pn{width:100%;max-height:86vh;border-radius:22px 22px 0 0}.pl{padding:16px}}
+.sc{height:8px;border-radius:99px;background:var(--bd);overflow:hidden;margin-top:4px}.sc i{display:block;height:100%;background:var(--g);transition:width .4s}
+.sd{border:1px solid color-mix(in srgb,var(--ac) 35%,var(--bd));background:linear-gradient(135deg,color-mix(in srgb,var(--ac) 7%,var(--card)),var(--card))}.sd textarea{margin-top:10px}
+</style>
+</head>
+<body>
+<div class="w">
+<span class="badge">✨ AI Prompt Studio</span>
+<h1>مولّد البرومبتات الاحترافي</h1>
+<p class="sub">اختار من كل قسم (اضغط تاني على الاختيار لإلغائه). البرومبت بيتكتب لوحده على الجنب وبيتحدّث مع كل اختيار.</p>
+<div class="sec sd"><h2><span class="ci">🧠</span>الوصف الذكي<span class="hint" style="margin-inline-start:auto">اكتب بالعربي وهو يملّى الاختيارات لوحده</span></h2>
+<textarea id="sd" placeholder="مثال: رجل بدلة كحلي مخططة في مكتب فخم ابتسامة واسعة بالأسنان إضاءة رامبرانت لقطة نص جسم"></textarea>
+<div class="row"><button class="btn" id="sdb">حلّل وطبّق ✨</button></div><div id="sdr"></div></div>
+<div class="sec"><h2><span class="ci">⚙️</span>الإعدادات والقوالب</h2>
+<div class="row" style="margin-top:0"><span class="hint">الموديل المستهدف:</span><select id="tm"><option value="gem">Gemini / Nano Banana</option><option value="gpt">ChatGPT Images</option><option value="mj">Midjourney</option><option value="flux">Flux / Stable Diffusion</option></select><button class="btn s" id="th">🌓 فاتح/داكن</button><button class="btn s" id="ex">⬇ تصدير</button><button class="btn s" id="imb">⬆ استيراد</button><input type="file" id="im" accept=".json" hidden></div>
+<div class="grp"><h3>قوالب جاهزة</h3><div class="chips" id="tpl"></div></div>
+<div class="grp"><h3>قوالبي المحفوظة</h3><div class="row" style="margin:0 0 8px"><input type="text" id="tn" placeholder="اسم القالب"><button class="btn" id="ts">حفظ الاختيارات الحالية</button></div><div class="chips" id="tl"></div></div></div>
+<div class="lay">
+<div id="form" class="ws"><nav id="nav"></nav><div id="pnl" class="pl"></div></div>
+<div class="out sec">
+<h2><span class="ci">⚡</span>البرومبت الجاهز<span class="live"></span></h2>
+<div class="row" style="margin:0 0 10px"><button class="btn s" id="ud" title="تراجع">↶</button><button class="btn s" id="rd" title="إعادة">↷</button><button class="btn s" id="pal">🔍 بحث سريع</button><button class="btn s" id="sur">✨ مفاجأة</button><button class="btn s" id="hs">🕘 السجل</button><button class="btn s" id="lk">🔗 رابط</button><select id="fmt"><option value="txt">نص</option><option value="json">JSON</option><option value="ar">مراجعة عربي</option></select></div><div id="score"></div>
+<textarea id="out" class="ota" readonly></textarea><div class="hint" id="cnt"></div><div id="warns"></div><div class="warn" id="trw" style="display:none"></div>
+<div class="row"><button class="btn" id="cp">نسخ البرومبت</button><select id="rsel"></select><button class="btn s" id="rnd">🎲 عشوائي للقسم</button><button class="btn s" id="v3">3 نسخ مختلفة</button><button class="btn s" id="rst">إعادة ضبط</button><span id="ok" class="hint"></span></div>
+<div id="vars"></div><div class="grp" style="margin-top:18px"><h3>تعديل البرومبت</h3>
+<div class="chips" id="etype"></div>
+<div class="row"><input type="text" id="etxt" placeholder="اكتب التعديل (مثال: البنطلون بيج بدل الجينز)"><button class="btn" id="eadd">أضف</button></div>
+<div class="chips" id="elist" style="margin-top:10px"></div>
+<div class="row"><button class="btn s" id="eman">تعديل يدوي للنص</button></div>
+<div class="hint" style="margin-top:8px">التعديلات بتتضاف في آخر البرومبت مع جملة إن باقي كل حاجة زي ما هي. التعديل اليدوي بيوقف التحديث التلقائي لحد ما ترجع للتلقائي.</div></div>
+<div class="hint" style="margin-top:10px">البرومبت بالإنجليزي لأن أدوات التوليد بتفهمه أدق. أي نص بتكتبه بالعربي (وصف المشهد، الملاحظات، التعديلات) بيتترجم تلقائي للإنجليزي جوه البرومبت. أول مرة هيطلب موافقتك.</div>
+</div>
+</div>
+</div>
+<div class="bar"><button class="btn" id="cp2">📋 نسخ</button><button class="btn s" id="up">⬆ للبرومبت</button><span class="hint" id="cnt2"></span></div>
+<script>
+// كل خيار: "العربي|English" — النوع s اختيار واحد، m اختيار متعدد
+var SEC=[
+["الصورة المرجعية",[
+["rmode","طريقة استخدام الصورة المرجعية","s","إنشاء مشهد جديد بهوية الشخص|generate a new scene using the person from the identity reference photo,استبدال الشخص في صورة موجودة (Face Swap)|replace the person in the scene image with the person from the identity reference photo,نفس الزاوية والوضعية من صورة مرجعية|reproduce the exact camera angle and pose of the scene reference image using the person from the identity reference photo,تحويل الصورة لستايل تاني|restyle the scene reference image while keeping the person identical"],
+["rkeep","اللي يتحافظ عليه من صورة الشخص","m","ملامح الوش|exact facial structure and proportions,الشعر|hair style and color with the same hairline,الدقن والشارب|beard and mustache and facial hair pattern,لون البشرة|skin tone,العيون والحواجب|eye shape and eye color and eyebrows,النظارة|glasses exactly as in the reference,التعبير|facial expression,علامات مميزة (شامة أو غمازة)|distinctive marks such as moles or dimples"],
+["rscene","اللي يتاخد من صورة المشهد المرجعية","m","الزاوية والكاميرا|camera angle and perspective,الوضعية|body pose,الإضاءة|lighting direction and color,الألوان|color palette and grading,الخلفية|background and environment,التكوين|overall composition and framing,اللبس|clothing"],
+["rstr","قوة الالتزام بالشبه","s","عالية جدا|absolute priority: identity fidelity above all other instructions,عالية|high priority,متوسطة|moderate priority"],
+["rnote","ملاحظات عن الصورة المرجعية","t","مثال: الصورة الأولى للوش والتانية للمشهد"]]],
+["الحفاظ على الملامح",[
+["flock","الملامح اللي لازم تتحافظ عليها بالحرف","m","شكل الوش|face shape and proportions,الفك والذقن|jawline and chin shape,الجبهة|forehead shape and height,الحواجب|eyebrow shape and thickness,شكل العيون|eye shape size and spacing,لون العيون|eye color,الأنف|nose shape and width,الشفايف|lip shape and fullness,الخدود|cheekbones and cheek volume,الودان|ear shape,خط الشعر|hairline and hair density,الدقن والشارب|beard and mustache density and shape,لون البشرة|skin tone and undertone,الشامات والعلامات|moles scars and distinctive marks,الغمازات|dimples,الابتسامة والأسنان|smile and teeth shape,خطوط التعبير المميزة|characteristic facial expression lines"],
+["fno","ممنوع يتغير","m","السن|do not change the apparent age,الوزن|do not change the face weight or body build,الجنس|do not change gender,ملامح العرق|do not change ethnic features,لون البشرة|do not lighten or darken the skin,الشعر|do not change hair length or color unless requested,التجميل|no beautification or retouching,التنحيف|no face slimming,تكبير العيون|no enlarged eyes,تصغير الأنف|no nose reshaping"],
+["flvl","درجة الصرامة","s","صارمة جدا|zero tolerance: any deviation from the reference face is a failure,صارمة|strict,متوسطة|balanced"],
+["fnote","ملاحظة عن ملامحك (اكتب بحرية)","t","مثال: الأنف مقوس بشكل خفيف والحواجب كثيفة"]]],
+["الشخص والتعبير",[
+["who","الشخص","s","رجل|man,شاب|young man,سيدة|woman,سيدة محجبة|woman wearing a hijab"],
+["exp","تعبير الوجه","s","ابتسامة واسعة بالأسنان|warm wide smile showing teeth,ابتسامة مغلقة|subtle closed-mouth smile,جدي وحازم|serious confident expression,متفاجئ|surprised expression,مرهق وهادي|mildly tired subdued look,واثق وهادي|calm confident look"],
+["gaze","اتجاه النظر","s","في الكاميرا مباشرة|looking directly at the camera,بعيد عن الكاميرا|looking away from the camera,لفوق|looking upward,على الشيء اللي في إيده|looking at the object in hand"]]],
+["اللبس",[
+["fit","نوع اللبس","s","بدلة رسمية|formal suit,بدلة 3 قطع مع ساعة جيب|three-piece suit with waistcoat and gold pocket-watch chain,معطف أبيض (معمل)|white lab coat over a collared shirt,معطف أبيض (طبيب)|white medical coat,قميص مفتوح فوق تيشيرت|open button-up shirt over a plain t-shirt,هودي|hoodie,كواتر زيب|quarter-zip pullover,ترنج الثمانينات|1980s-style tracksuit,زي عسكري صحراوي مموه|desert camouflage combat uniform,زي ضابط|Egyptian army officer dress uniform,طربوش وبدلة الخمسينات|red fez (tarboosh) with a classic 1950s suit,جاكيت سويد|suede overshirt jacket,جاكيت جلد|leather jacket,بولو|polo shirt,قميص عادي|plain collared shirt,جلابية|traditional Egyptian galabeya,بلوفر تريكو|knit sweater,معطف طويل|long overcoat,كاجوال شيك|smart casual outfit,قميص كتان|linen shirt,تيشيرت أبيض ساده|plain white t-shirt,تيشيرت بطبعة|graphic print t-shirt,قميص هاواي|Hawaiian shirt,قميص كاروهات|plaid flannel shirt,بلوزة أنيقة|elegant blouse,فستان سهرة|formal evening dress,فستان صيفي|casual summer dress,عباية سوداء|elegant black abaya,تيرتل نك أسود|black turtleneck,سموكنج مع بابيون|black tuxedo with bow tie,بدلة بيج صيفية|light beige summer suit,بدلة كحلي مخططة|navy pinstripe suit,قميص أبيض وببيون|white shirt with a bow tie,جاكيت بومبر|bomber jacket,جاكيت جينز|denim jacket,جاكيت رياضي|track jacket,بدلة رياضية حديثة|modern athletic tracksuit,تيشيرت منتخب|Egyptian national football jersey,زي طيار|pilot uniform with aviator jacket,ملابس جراحة خضراء|green surgical scrubs,سترة مهندس|engineer safety vest,زي شيف|professional chef whites,زي أزهري|Al-Azhar scholar robe and caftan,بالطو شتوي ثقيل|heavy winter parka,بدلة فضاء|astronaut space suit,درع فارس|medieval knight armor,ملابس فرعونية ملكية|ancient Egyptian pharaoh royal garments,ثوب خليجي أبيض|white Gulf thobe,قفطان مطرز|embroidered kaftan,جيليه منفوخ|sleeveless puffer vest,كارديجان فوق قميص|cardigan over shirt,بليزر مزدوج الصف|double-breasted blazer,بليزر بدون كرافتة|business casual blazer without tie,جاكيت جلد موتوسيكل|leather biker jacket,ترنش كوت|trench coat"],
+["col","لون اللبس","s","أبيض|white,أسود|black,بني|brown,بني غامق|dark brown,بيج|beige,كحلي|navy blue,أزرق|blue,أخضر|green,أخضر نعناعي|mint green,بوردو|burgundy,رمادي|grey,كريمي|cream,تركواز|teal,برتقالي|orange,ذهبي|gold"],
+["wear","طريقة اللبس","m","مفتوح (غير مزرر)|worn open and unbuttoned,مقفول بالكامل|fully buttoned,الياقة م
